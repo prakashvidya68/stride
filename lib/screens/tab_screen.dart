@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stride/icons/icecons_icons.dart';
 import '../animation/animation_bottom_bar.dart';
 import './dashboard_screen.dart';
 import './transaction_screen.dart';
@@ -55,7 +56,7 @@ class _TabScreenState extends State<TabScreen> {
          
           IconButton(
             icon: Icon(
-              Icons.settings,
+              Icecons.settings,
               size: 20,
             ),
             onPressed: () {
@@ -69,7 +70,7 @@ class _TabScreenState extends State<TabScreen> {
           barItems: [
             BarItem(
               text: "Dashboard",
-              iconData: Icons.dashboard,
+              iconData: Icecons.grid_dynamic_1,
               color: Color(0xFFF28649),
             ),
             BarItem(
@@ -79,7 +80,7 @@ class _TabScreenState extends State<TabScreen> {
             ),
             BarItem(
               text: "Market",
-              iconData: Icons.shopping_basket,
+              iconData: Icecons.bag,
               color: Color(0xFFF28649),
             ),
             BarItem(
