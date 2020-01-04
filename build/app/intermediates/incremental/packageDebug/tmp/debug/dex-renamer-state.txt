@@ -1,4 +1,4 @@
-#Fri Jan 03 21:39:13 IST 2020
+#Sat Jan 04 23:46:47 IST 2020
 base.0=D\:\\Stride\\stride-master\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stride/dummyData.dart';
 
+
 class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -17,8 +18,9 @@ class DashboardScreen extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 0.47,
                 height: 30,
                 child: Card(
+                  elevation: 3,
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(12),
                   ),
                 ),
               ),
@@ -26,8 +28,9 @@ class DashboardScreen extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 0.4,
                 height: 30,
                 child: Card(
+                  elevation: 3,
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(12),
                   ),
                 ),
               ),
@@ -35,8 +38,9 @@ class DashboardScreen extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 0.47,
                 height: 30,
                 child: Card(
+                  elevation: 3,
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(12),
                   ),
                 ),
               ),
@@ -81,11 +85,11 @@ class DashBoardScoreBoard extends StatelessWidget {
               height: MediaQuery.of(context).size.height * 0.3,
               width: MediaQuery.of(context).size.width * 0.9,
               child: Card(
-                elevation: 6,
+                elevation: 3,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(20),
-                    topLeft: Radius.circular(20),
+                    bottomLeft: Radius.circular(18),
+                    topLeft: Radius.circular(18),
                   ),
                 ),
                 child: Row(
@@ -157,16 +161,7 @@ class DashBoardScoreBoard extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Card(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.only(
-                            bottomLeft: Radius.circular(20),
-                            topLeft: Radius.circular(20),
-                          ),
-                        ),
-                        child: Text('GraphHere')
-                        // TODO: IMPLEMENT GRAPH HERE.
-                        ),
+                    // RadialGraph(),
                   ],
                 ),
               ),

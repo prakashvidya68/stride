@@ -59,6 +59,7 @@ class _TabScreenState extends State<TabScreen> {
             icon: Icon(
               Icecons.settings,
               size: 20,
+              color: Colors.black,
             ),
             onPressed: () {
               Navigator.of(context).pushNamed('/settings');
