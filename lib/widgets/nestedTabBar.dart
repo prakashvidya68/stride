@@ -31,7 +31,7 @@ class _NestedTabBarState extends State<NestedTabBar>
       children: <Widget>[
         TabBar(
           indicatorSize: TabBarIndicatorSize.tab,
-          indicatorPadding: EdgeInsets.symmetric(horizontal: 35,vertical: 8),
+          indicatorPadding: EdgeInsets.symmetric(horizontal: 15,vertical: 8),
           controller: _nestedTabController,
           indicatorColor: Colors.black,
           labelColor: Colors.black,

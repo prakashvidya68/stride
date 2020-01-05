@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import './screens/yourAcitvity_screen.dart';
 import './screens/settings_screen.dart';
 import './screens/tab_screen.dart';
 
@@ -21,6 +23,7 @@ class MyApp extends StatelessWidget {
 
       routes: {
         // '/': (context) => TabScreen(),
+        '/yourActivity':(context)=>YourActivity(),
         '/settings':(context)=>SettingsScreen(),
       
       },

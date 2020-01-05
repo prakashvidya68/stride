@@ -49,6 +49,8 @@ class _TabScreenState extends State<TabScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0.0,
         centerTitle: true,
         title: Text(
           _selectedTitle(_selectedPage),
