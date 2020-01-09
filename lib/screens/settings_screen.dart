@@ -11,6 +11,11 @@ class SettingsScreen extends StatelessWidget {
           style: TextStyle(color: Color(0xFFF28649)),
         ),
       ),
+      body: ListView(
+        children: <Widget>[
+          
+        ],
+      ),
     );
   }
 }
