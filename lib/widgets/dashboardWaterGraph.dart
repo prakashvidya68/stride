@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:stride/widgets/raidalGraph.dart';
 
-
-
 class WaterInfo extends StatefulWidget {
   double maxWaterIntake;
   double waterIntake;

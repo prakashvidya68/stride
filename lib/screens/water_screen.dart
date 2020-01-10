@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 
-class YourActivity extends StatelessWidget {
+class WaterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
         backgroundColor: Colors.transparent,
-        elevation: 0.0,        
+        elevation: 0.0,
+        centerTitle: true,
         title: Text(
-          "Your Activity",
+          "WaterLog",
           style: TextStyle(color: Color(0xFFF28649)),
         ),
       ),
+      body: Container(),
     );
   }
 }

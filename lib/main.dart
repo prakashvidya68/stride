@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import './screens/yourAcitvity_screen.dart';
 import './screens/settings_screen.dart';
 import './screens/tab_screen.dart';
+import './screens/water_screen.dart';
 
 
 void main() => runApp(MyApp());
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         // '/': (context) => TabScreen(),
         '/yourActivity':(context)=>YourActivity(),
         '/settings':(context)=>SettingsScreen(),
+        '/waterIntake':(context)=>WaterScreen(),
       
       },
     );

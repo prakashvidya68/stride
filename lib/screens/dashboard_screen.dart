@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 import 'package:stride/widgets/levelInfo.dart';
@@ -34,13 +32,17 @@ class DashboardScreen extends StatelessWidget {
             left: 2,
             right: 2,
           ),
-          child: WaterInfo(
-            waterIntake: dummyUserScore.waterIntake,
-            maxWaterIntake: dummyUserScore.maxWaterIntake,
+          child: GestureDetector(
+            onTap: () {
+              Navigator.of(context).pushNamed('/waterIntake');
+            },
+            child: WaterInfo(
+              waterIntake: dummyUserScore.waterIntake,
+              maxWaterIntake: dummyUserScore.maxWaterIntake,
+            ),
           ),
         ),
       ],
     );
   }
 }
-
