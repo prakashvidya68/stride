@@ -14,7 +14,7 @@ class _LevelInfoState extends State<LevelInfo> {
         borderRadius: BorderRadius.circular(12),
       ),
       child: Container(
-        height: MediaQuery.of(context).size.height * .18,
+        height: MediaQuery.of(context).size.height * .12,
         decoration: BoxDecoration(
           border: Border.all(color: Color(0xFF5678C1)),
           borderRadius: BorderRadius.circular(12),

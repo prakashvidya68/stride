@@ -9,6 +9,8 @@ const dummyUserScore = const UserScoreInfo(
   distWalkedTday: 12.89,
   kCalBurnt: 12.4,
   targetDist: 15,
+  waterIntake: 2,
+  maxWaterIntake: 8,
 );
 
 const dummyUserCoins = const UserTransactionInfo(

@@ -32,14 +32,13 @@ class MiddleRow extends StatelessWidget {
                     Padding(
                       padding:
                           const EdgeInsets.only(top: 5.0, left: 5, right: 5),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: Colors.amber.withOpacity(0.13)),
+                      child: CircleAvatar(
+                        radius: 15,
+                        backgroundColor: Colors.amber.withOpacity(0.13),
                         child: Icon(
                           Icons.attach_money,
                           color: Colors.amber,
-                          size: 30,
+                          size: 26,
                         ),
                       ),
                     ),
@@ -58,7 +57,8 @@ class MiddleRow extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 8.0),
                       child: Text(
-                        (dummyUserScore.stepsToday / 1150).toStringAsFixed(2) +" Coins",
+                        (dummyUserScore.stepsToday / 1150).toStringAsFixed(2) +
+                            " Coins",
                         textAlign: TextAlign.left,
                         style: TextStyle(
                             fontFamily: 'Poppins',
@@ -88,16 +88,15 @@ class MiddleRow extends StatelessWidget {
                     Padding(
                       padding:
                           const EdgeInsets.only(top: 5.0, left: 5, right: 5),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: Colors.brown.withOpacity(0.13)),
-                        child: Padding(
+                      child: CircleAvatar(
+                        radius: 16,
+                        backgroundColor: Colors.brown.withOpacity(0.13),
+                        child:Padding(
                           padding: const EdgeInsets.all(2.0),
                           child: Icon(
                             Icons.ondemand_video,
                             color: Colors.brown,
-                            size: 27,
+                            size: 23,
                           ),
                         ),
                       ),
@@ -115,18 +114,19 @@ class MiddleRow extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 10.0,),
+                      padding: const EdgeInsets.only(
+                        left: 10.0,
+                      ),
                       child: Text(
-                        "Watch relevent ads & increase your coins.",
+                        "Watch ads & increase your coins.",
                         textAlign: TextAlign.left,
                         style: TextStyle(
-                            fontFamily: 'Poppins',
-                            fontSize: 14,
-                            color: Colors.grey,
-                            ),
+                          fontFamily: 'Poppins',
+                          fontSize: 14,
+                          color: Colors.grey,
+                        ),
                       ),
                     ),
-
                   ],
                 ),
               ),
@@ -148,16 +148,15 @@ class MiddleRow extends StatelessWidget {
                     Padding(
                       padding:
                           const EdgeInsets.only(top: 5.0, left: 5, right: 5),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: Colors.blue.withOpacity(0.13)),
+                      child:  CircleAvatar(
+                        radius: 16,
+                        backgroundColor: Colors.blue.withOpacity(0.13),
                         child: Padding(
                           padding: const EdgeInsets.all(2.0),
                           child: Icon(
                             Icons.share,
                             color: Colors.blue,
-                            size: 27,
+                            size: 23,
                           ),
                         ),
                       ),
@@ -175,15 +174,17 @@ class MiddleRow extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 10.0,),
+                      padding: const EdgeInsets.only(
+                        left: 10.0,
+                      ),
                       child: Text(
                         "Invite yours friends & get rewarded.",
                         textAlign: TextAlign.left,
                         style: TextStyle(
-                            fontFamily: 'Poppins',
-                            fontSize: 14,
-                            color: Colors.grey,
-                            ),
+                          fontFamily: 'Poppins',
+                          fontSize: 14,
+                          color: Colors.grey,
+                        ),
                       ),
                     ),
                   ],
