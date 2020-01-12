@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:stride/dummyData.dart';
 
 class NestedTabBar extends StatefulWidget {
-
   @override
   _NestedTabBarState createState() => _NestedTabBarState();
 }
@@ -31,7 +31,7 @@ class _NestedTabBarState extends State<NestedTabBar>
       children: <Widget>[
         TabBar(
           indicatorSize: TabBarIndicatorSize.tab,
-          indicatorPadding: EdgeInsets.symmetric(horizontal: 15,vertical: 8),
+          indicatorPadding: EdgeInsets.symmetric(horizontal: 15, vertical: 8),
           controller: _nestedTabController,
           indicatorColor: Colors.black,
           labelColor: Colors.black,
@@ -59,33 +59,141 @@ class _NestedTabBarState extends State<NestedTabBar>
             controller: _nestedTabController,
             children: <Widget>[
               Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8.0),
-                  color: Colors.blueAccent,
-                ),
+                child: ListView.builder(
+                    itemCount: dummyTransactionInfo.length,
+                    itemBuilder: (ctx, index) {
+                      return AllTransaction(index:index);
+                    }),
               ),
               Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8.0),
-                  color: Colors.orangeAccent,
-                ),
+                child: ListView.builder(
+                    itemCount: dummyTransactionInfo.length,
+                    itemBuilder: (ctx, index) {
+                      return SpentTransaction(index:index);
+                    }),
               ),
               Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8.0),
-                  color: Colors.greenAccent,
-                ),
+                child: ListView.builder(
+                    itemCount: dummyTransactionInfo.length,
+                    itemBuilder: (ctx, index) {
+                      return RecievedTransaction(index:index);
+                    }),
               ),
               Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8.0),
-                  color: Colors.orange,
-                ),
+                child: ListView.builder(
+                    itemCount: dummyTransactionInfo.length,
+                    itemBuilder: (ctx, index) {
+                      return RewardedTransaction(index:index);
+                    }),
               ),
-              
             ],
           ),
         )
+      ],
+    );
+  }
+}
+
+class RewardedTransaction extends StatelessWidget {
+  final int index;
+  const RewardedTransaction({
+    this.index,
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: <Widget>[
+        ListTile(
+          leading: CircleAvatar(
+            child: Icon(Icons.attach_money),
+          ),
+          title: Text(dummyTransactionInfo[index].transactionTitle),
+          subtitle: Text(dummyTransactionInfo[index].transactionTime),
+          trailing: Text(
+            dummyTransactionInfo[index].amountOfTransaction.toStringAsFixed(2),
+          ),
+        ),
+        Divider()
+      ],
+    );
+  }
+}
+
+class RecievedTransaction extends StatelessWidget {
+  final int index;
+  const RecievedTransaction({
+    Key key, this.index,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: <Widget>[
+        ListTile(
+          leading: CircleAvatar(
+            child: Icon(Icons.attach_money),
+          ),
+          title: Text(dummyTransactionInfo[index].transactionTitle),
+          subtitle: Text(dummyTransactionInfo[index].transactionTime),
+          trailing: Text(
+            dummyTransactionInfo[index].amountOfTransaction.toStringAsFixed(2),
+          ),
+        ),
+        Divider()
+      ],
+    );
+  }
+}
+
+class SpentTransaction extends StatelessWidget {
+  final int index;
+  const SpentTransaction({
+    Key key, this.index,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: <Widget>[
+        ListTile(
+          leading: CircleAvatar(
+            child: Icon(Icons.attach_money),
+          ),
+          title: Text(dummyTransactionInfo[index].transactionTitle),
+          subtitle: Text(dummyTransactionInfo[index].transactionTime),
+          trailing: Text(
+            dummyTransactionInfo[index].amountOfTransaction.toStringAsFixed(2),
+          ),
+        ),
+        Divider()
+      ],
+    );
+  }
+}
+
+class AllTransaction extends StatelessWidget {
+  final int index;
+  const AllTransaction({
+    Key key, this.index,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: <Widget>[
+        ListTile(
+          leading: CircleAvatar(
+            child: Icon(Icons.attach_money),
+          ),
+          title: Text(dummyTransactionInfo[index].transactionTitle),
+          subtitle: Text(dummyTransactionInfo[index].transactionTime),
+          trailing: Text(
+            dummyTransactionInfo[index].amountOfTransaction.toStringAsFixed(2),
+          ),
+        ),
+        Divider()
       ],
     );
   }

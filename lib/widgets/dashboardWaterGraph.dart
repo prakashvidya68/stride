@@ -17,18 +17,13 @@ class _WaterInfoState extends State<WaterInfo> {
     return Row(
       children: <Widget>[
         Card(
-          elevation: 3,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
           child: Container(
-            padding: EdgeInsets.all(8),
+            padding: EdgeInsets.all(6),
             height: MediaQuery.of(context).size.height * .30,
             width: MediaQuery.of(context).size.width * 0.48,
-            decoration: BoxDecoration(
-              border: Border.all(color: Color(0xFF5678C1)),
-              borderRadius: BorderRadius.circular(12),
-            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
@@ -59,7 +54,7 @@ class _WaterInfoState extends State<WaterInfo> {
                   ],
                 ),
                 Text(
-                  "Your Daily Intake.",
+                  "   Your Daily Intake.",
                   textAlign: TextAlign.left,
                   style: TextStyle(
                     fontFamily: 'Poppins',

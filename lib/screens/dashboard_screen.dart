@@ -19,7 +19,7 @@ class DashboardScreen extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.only(
-            top: 8.0,
+            top: 6.0,
             left: 2,
             right: 2,
           ),

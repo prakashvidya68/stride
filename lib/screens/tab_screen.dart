@@ -100,11 +100,7 @@ class _TabScreenState extends State<TabScreen> {
               _selectedPage = index;
             });
           }),
-          floatingActionButton: FloatingActionButton(
-            // mini: true,
-            child: Icon(Icons.add,color: Colors.white,),
-            onPressed: (){},
-          ),
+          
     );
   }
 }

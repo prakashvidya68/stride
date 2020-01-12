@@ -16,15 +16,10 @@ class MiddleRow extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           children: <Widget>[
             Card(
-              elevation: 3,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Container(
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.amber),
-                  borderRadius: BorderRadius.circular(12),
-                ),
                 width: MediaQuery.of(context).size.width * 0.37,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -72,15 +67,10 @@ class MiddleRow extends StatelessWidget {
               ),
             ),
             Card(
-              elevation: 3,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Container(
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.brown),
-                  borderRadius: BorderRadius.circular(12),
-                ),
                 width: MediaQuery.of(context).size.width * 0.37,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -91,7 +81,7 @@ class MiddleRow extends StatelessWidget {
                       child: CircleAvatar(
                         radius: 16,
                         backgroundColor: Colors.brown.withOpacity(0.13),
-                        child:Padding(
+                        child: Padding(
                           padding: const EdgeInsets.all(2.0),
                           child: Icon(
                             Icons.ondemand_video,
@@ -132,15 +122,10 @@ class MiddleRow extends StatelessWidget {
               ),
             ),
             Card(
-              elevation: 3,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Container(
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.blue),
-                  borderRadius: BorderRadius.circular(12),
-                ),
                 width: MediaQuery.of(context).size.width * 0.37,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -148,7 +133,7 @@ class MiddleRow extends StatelessWidget {
                     Padding(
                       padding:
                           const EdgeInsets.only(top: 5.0, left: 5, right: 5),
-                      child:  CircleAvatar(
+                      child: CircleAvatar(
                         radius: 16,
                         backgroundColor: Colors.blue.withOpacity(0.13),
                         child: Padding(

@@ -9,7 +9,6 @@ class DashBoardScoreBoard extends StatelessWidget {
     Key key,
   }) : super(key: key);
 
-
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
@@ -37,7 +36,6 @@ class DashBoardScoreBoard extends StatelessWidget {
               height: MediaQuery.of(context).size.height * 0.3,
               width: MediaQuery.of(context).size.width * 0.9,
               child: Card(
-                elevation: 3,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(18),
@@ -126,7 +124,8 @@ class DashBoardScoreBoard extends StatelessWidget {
                             completecolor: Color(0xFF5678C1),
                             incompletecolor: Colors.white,
                             maxangle: -pi,
-                            graphradius: MediaQuery.of(context).size.height*.0905+11,
+                            graphradius:
+                                MediaQuery.of(context).size.height * .0905 + 11,
                             height: MediaQuery.of(context).size.height * 0.05,
                             width: MediaQuery.of(context).size.height * 0.05,
                           ),
@@ -139,7 +138,8 @@ class DashBoardScoreBoard extends StatelessWidget {
                             completecolor: Color(0xFFF28649),
                             incompletecolor: Colors.white,
                             maxangle: -pi,
-                            graphradius: MediaQuery.of(context).size.height*.0905,
+                            graphradius:
+                                MediaQuery.of(context).size.height * .0905,
                             height: MediaQuery.of(context).size.height * 0.05,
                             width: MediaQuery.of(context).size.height * 0.05,
                           ),
@@ -156,4 +156,3 @@ class DashBoardScoreBoard extends StatelessWidget {
     );
   }
 }
-
